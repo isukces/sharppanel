@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>cPanel® API for .NET</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://devdoc.isukces.pl/wp-content/uploads/2014/02/isukces_sharppanel_64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>cPanel® API for .NET</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright by Internet Sukces Piotr Stęclik 2014</copyright>
+    <tags>C#, isukces</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\isukces.sharppanel.pdb" target="lib\net40" />
+  </files>
+</package>
+
+
+

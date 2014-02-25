@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9BD9937-0F4D-4232-86DF-932890663F01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>isukces.sharppanel</RootNamespace>
+    <AssemblyName>isukces.sharppanel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\isukces.sharppanel.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="isukces.simple">
+      <HintPath>packages\isukces.simple.1.0.14056.3\lib\net40\isukces.simple.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiFunctions.cs" />
+    <Compile Include="BasicApi.cs" />
+    <Compile Include="CPanel.cs" />
+    <Compile Include="NotifyPropertyChangedBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_data\AddDomainResult.cs" />
+    <Compile Include="_data\Cache.cs" />
+    <Compile Include="_data\CacheItem.cs" />
+    <Compile Include="_data\CpanelApiResult.cs" />
+    <Compile Include="_data\CPanelException.cs" />
+    <Compile Include="_data\DomainContainer.cs" />
+    <Compile Include="_data\HostingProvider.cs" />
+    <Compile Include="_data\Resource.cs" />
+    <Compile Include="_data\ResourceD.cs" />
+    <Compile Include="_data\Statistics.cs" />
+    <Compile Include="_data\_async&amp;reactive\AnonymousDisposable.cs" />
+    <Compile Include="_data\_async&amp;reactive\ObservableHelper.cs" />
+    <Compile Include="_data\_async&amp;reactive\TransmissionMessage.cs" />
+    <Compile Include="_data\_async&amp;reactive\TransmissionMessageType.cs" />
+    <Compile Include="_data\_domain\AddonDomain.cs" />
+    <Compile Include="_data\_domain\DomainName.cs" />
+    <Compile Include="_data\_domain\ParkedDomain.cs" />
+    <Compile Include="_data\_domain\RootDomain.cs" />
+    <Compile Include="_data\_domain\SubDomain.cs" />
+    <Compile Include="_data\_email\Email.cs" />
+    <Compile Include="_data\_email\EmailEx.cs" />
+    <Compile Include="_data\_ftp\FtpUser.cs" />
+    <Compile Include="_data\_ftp\FtpUserExtended.cs" />
+    <Compile Include="_data\_ftp\FtpUserType.cs" />
+    <Compile Include="_data\_sql\MysqlDB.cs" />
+    <Compile Include="_data\_sql\MysqlUser.cs" />
+    <Compile Include="_data\_sql\MysqlUserdbprivs.cs" />
+    <Compile Include="_enum&amp;delegate\AddDomainStatus.cs" />
+    <Compile Include="_enum&amp;delegate\AskDelegate.cs" />
+    <Compile Include="_enum&amp;delegate\DomainType.cs" />
+    <Compile Include="_enum&amp;delegate\ProgressReportingAction.cs" />
+    <Compile Include="_enum&amp;delegate\WellKownCpanelProblems.cs" />
+    <Compile Include="Polish.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_StartDate="2000/1/1" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.DeltaBaseYearDayOfYear.Increment" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
